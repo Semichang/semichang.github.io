@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?-v=20231016173606">
+  <link rel="stylesheet" href="css/style.min.css?-v=20231016205309">
   <title>Moon River</title>
   <link rel="shortcut icon" href="img/robot-school.svg" type="image/svg-xml" sizes="any">
 </head>
@@ -14,8 +14,8 @@
         <div class="header__content">
             <div class="header__head">
                 <div class="header__logo">
-                    <div class="header__logo-img active "><img src="img/logo-black.svg" alt=""></div>
-                    <div class="header__logo-img "><img src="img/logo-white.svg" alt=""></div>
+                    <div class="header__logo-img logo_black active "><img src="img/logo-black.svg" alt=""></div>
+                    <div class="header__logo-img logo_white "><img src="img/logo-white.svg" alt=""></div>
                 </div>
                 <ul class="header__menu">
                     <li class="header__menu-item like"><a href="#"></a></li>
@@ -133,16 +133,37 @@
         </div>
       </div>
     </section>
-    <section class="gender"></section>
+    <section class="gender">
+      <div class="container-max">
+        <div class="gender-content">
+          <div class="gender__card">
+            <picture><source srcset="img/gender-male.webp" type="image/webp"><img src="img/gender-male.png" alt="" class="gender__card-img"></picture>
+            <div class="gender__card-body">
+              <a href="#" class="gender__card-go">Перейти в раздел</a>
+              <h2 class="gender__card-title">Для мужчин</h2>
+            </div>
+          </div>
+          <div class="gender__card">
+            <picture><source srcset="img/gender-female.webp" type="image/webp"><img src="img/gender-female.png" alt="" class="gender__card-img"></picture>
+            <div class="gender__card-body">
+              <a href="#" class="gender__card-go">Перейти в раздел</a>
+              <h2 class="gender__card-title">Для женщин</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="map"></section>
-    <section class="cards"></section>
+    <section class="cards">
+      <div class="container-max"></div>
+    </section>
     <section class="social-swiper"></section>
     <section class="form"></section>
   </main>
   <footer class="footer">
 
 </footer>
-  <script src="js/app.min.js?-v=20231016173606"></script>
+  <script src="js/app.min.js?-v=20231016205309"></script>
 </body>
 
 </html>
