@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?-v=20231016205309">
+  <link rel="stylesheet" href="css/style.min.css?-v=20231019195722">
   <title>Moon River</title>
   <link rel="shortcut icon" href="img/robot-school.svg" type="image/svg-xml" sizes="any">
 </head>
 
 <body>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=35766599-ce32-4e45-8290-773432e884cc&lang=ru_RU&-v=20231019195722"></script>
   <header class="header">
     <div class="container">
         <div class="header__content">
@@ -153,9 +154,74 @@
         </div>
       </div>
     </section>
-    <section class="map"></section>
+    <section class="map">
+      <div class="container-max">
+        <div class="map-contnet">
+          <div class="map__form-adress">
+            <h2 class="map__title">Найди <br> бутик около себя</h2>
+            <p class="map__description">Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+            <form action="#">
+              <div class="map__input-wrapper"><input type="text" name="adres" id="adres" placeholder="Введите адрес"
+                  class="map__input"></div>
+            </form>
+          </div>
+          <div class="map__map" id="map"></div>
+        </div>
+      </div>
+    </section>
     <section class="cards">
-      <div class="container-max"></div>
+      <div class="container-max">
+        <div class="cards-content">
+          <div class="cards__cards-body">
+            <div class="cards__card">
+              <div class="cards__card-img_wrapper"><img src="img/cards/1521765 1.png" alt="" class="cards__card-img">
+              </div>
+              <div class="cards__card-text">
+                <div class="cards__card-name">КОЛЬЦО jow’s, Cartier</div>
+                <div class="cards__card-description">Белое золото, бриллианты</div>
+                <div class="cards__card-price">674 000 ₽</div>
+              </div>
+            </div>
+            <div class="cards__card">
+              <div class="cards__card-img_wrapper"><img src="img/cards/589965 1.png" alt="" class="cards__card-img">
+              </div>
+              <div class="cards__card-text">
+                <div class="cards__card-name">КОЛЬЦО croix, Cartier</div>
+                <div class="cards__card-description">Желтое, белое, розовое золото</div>
+                <div class="cards__card-price">432 000 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__big-card">
+            <picture><source srcset="img/cards/card-woman.webp" type="image/webp"><img src="img/cards/card-woman.png" alt="" class="cards__big-card-img"></picture>
+            <div class="cards__big-card-text">
+              <div class="cards__big-card-name">КОлье etoile, HUBLOT</div>
+              <div class="cards__big-card-description">Белое золото, бриллианты</div>
+              <div class="cards__big-card-price">539 000 ₽</div>
+            </div>
+          </div>
+          <div class="cards__cards-body">
+            <div class="cards__card">
+              <div class="cards__card-img_wrapper"><img src="img/cards/CHIMERA-925 1.png" alt=""
+                  class="cards__card-img"></div>
+              <div class="cards__card-text">
+                <div class="cards__card-name">Серьги moon, HUBLOT</div>
+                <div class="cards__card-description">Желтое золото, сапфир</div>
+                <div class="cards__card-price">498 000 ₽</div>
+              </div>
+            </div>
+            <div class="cards__card">
+              <div class="cards__card-img_wrapper"><img src="img/cards/CHIMERA 1.png" alt="" class="cards__card-img">
+              </div>
+              <div class="cards__card-text">
+                <div class="cards__card-name">серьги win, BLANCPAIN</div>
+                <div class="cards__card-description">Желтое золото, жемчуг</div>
+                <div class="cards__card-price">398 000 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="social-swiper"></section>
     <section class="form"></section>
@@ -163,7 +229,7 @@
   <footer class="footer">
 
 </footer>
-  <script src="js/app.min.js?-v=20231016205309"></script>
+  <script src="js/app.min.js?-v=20231019195722"></script>
 </body>
 
 </html>
